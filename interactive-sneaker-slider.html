@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" data-template-name="interactive-sneaker-slider">
+  <head>
+    <meta charset="UTF-8">
+    <title>interactive-sneaker-slider</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="icon" sizes="16x16 32x32 64x64" href="images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="196x196" href="/favicon-192.png">
+    <link rel="icon" type="image/png" sizes="160x160" href="/favicon-160.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="/favicon-64.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+    <link rel="apple-touch-icon" href="/favicon-57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/favicon-114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/favicon-72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/favicon-144.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/favicon-60.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicon-120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/favicon-76.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/favicon-152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="/favicon-144.png">
+    <meta name="msapplication-config" content="/browserconfig.xml">
+  <link href="css/interactive-sneaker-slider.css" rel="stylesheet"></head>
+  <body>
+    <header class="header">
+      <div class="header_in"><a class="header__logo" href="#"><img class="header__logo_img" src="images/header_logo.svg" alt="logo"></a>
+        <nav class="header_nav"> 
+          <ul class="header_nav__list">
+            <li class="header_nav__item"><a class="header_nav__link" href="#">women</a></li>
+            <li class="header_nav__item"><a class="header_nav__link" href="#">men</a></li>
+            <li class="header_nav__item"><a class="header_nav__link" href="#">kids</a></li>
+          </ul>
+        </nav>
+        <ul class="header_btns">
+          <li class="header_btns__item"><a class="header_btns__button" href="#" type="button" aria-label="favourites products" title="favourites products">
+              <svg class="icon icon_favourite icon--size_mod">
+                <use xlink:href="images/sprite/sprite.svg#favourite"></use>
+              </svg></a></li>
+          <li class="header_btns__item"><a class="header_btns__button" href="#" type="button" aria-label="user menu" title="user menu">
+              <svg class="icon icon_user icon--size_mod">
+                <use xlink:href="images/sprite/sprite.svg#user"></use>
+              </svg></a></li>
+          <li class="header_btns__item"><a class="header_btns__button" href="#" type="button" aria-label="shopping cart" title="shopping cart">
+              <svg class="icon icon_cart icon--size_mod">
+                <use xlink:href="images/sprite/sprite.svg#cart"></use>
+              </svg></a></li>
+        </ul>
+        <button class="header__burger js-menu-trigger" type="button" aria-label="Open menu"><span class="header__burger_decor"></span></button>
+      </div>
+    </header>
+    <div class="wrapper header_mod">
+      <div class="base header_mod">
+        <section class="section sneaker_slider">
+          <div class="section_in sneaker_slider_in">
+            <ul class="sneaker_carousel js-sneaker-carousel">
+              <li class="sneaker_carousel__item js-sneaker-item"><a class="sneaker_carousel__item_link" href="#"> 
+                  <picture class="sneaker_carousel__item_img_w">
+                    <source srcset="images/sneaker-slider/product1.png.webp" type="image/webp">
+                    <source srcset="images/sneaker-slider/product1.png" type="image/png"><img class="sneaker_carousel__item_img" src="images/sneaker-slider/product1.png" alt=" " loading="eager">
+                  </picture></a><span class="sneaker_carousel__item_text sneaker_carousel__item_text--size_mod">Air Jordan</span></li>
+              <li class="sneaker_carousel__item js-sneaker-item"><a class="sneaker_carousel__item_link" href="#"> 
+                  <picture class="sneaker_carousel__item_img_w">
+                    <source srcset="images/sneaker-slider/product2.png.webp" type="image/webp">
+                    <source srcset="images/sneaker-slider/product2.png" type="image/png"><img class="sneaker_carousel__item_img" src="images/sneaker-slider/product2.png" alt=" " loading="eager">
+                  </picture></a><span class="sneaker_carousel__item_text">Yeezy</span></li>
+              <li class="sneaker_carousel__item js-sneaker-item"><a class="sneaker_carousel__item_link" href="#"> 
+                  <picture class="sneaker_carousel__item_img_w">
+                    <source srcset="images/sneaker-slider/product3.png.webp" type="image/webp">
+                    <source srcset="images/sneaker-slider/product3.png" type="image/png"><img class="sneaker_carousel__item_img" src="images/sneaker-slider/product3.png" alt=" " loading="eager">
+                  </picture></a><span class="sneaker_carousel__item_text">Bape</span></li>
+            </ul>
+            <div class="sneaker_carousel__pagination js-sneaker-pagination"></div>
+          </div>
+        </section>
+      </div>
+    </div>
+  <script defer src="js/interactive-sneaker-slider.js"></script></body>
+</html>

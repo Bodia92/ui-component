@@ -1,0 +1,1 @@
+(()=>{"use strict";function n(n){return n instanceof Function}var o;Math.PI;((o=function(){console.log("load page")})||n(o))&&window.addEventListener("load",o)})();
